@@ -1,0 +1,22 @@
+<launch>
+    <param name = "yamlpath" type = "string" value = "/home/qk/Desktop/DJ_data/chery_1221.yaml" />
+    <param name = "posepath" type = "string" value = "/home/qk/Desktop/DJ_data/dj2_ajst" />
+    <param name = "txtpath_mp" type = "string" value = "/home/qk//Documents/dj2_MapPoint" />
+    <param name = "txtpath_kf" type = "string" value = "/home/qk//Music/dj2_kFrame" />
+    <param name = "RePerTH" type = "double" value = "5000" />
+    <param name = "sum_rTH" type = "double" value = "0.024" />
+    <param name = "sum_tTH" type = "double" value = "0.24" />
+    <param name = "THdist" type = "double" value = "1000" />
+    <param name = "DrawTraj" type = "bool" value = "true" />
+    <param name = "UseRansac" type = "bool" value = "true" />
+    <param name = "ShowNum" type = "bool" value = "true" />
+    <param name = "SavePcd" type = "bool" value = "false" />
+    <param name = "WriteTxt" type = "bool" value = "true" />
+    <param name = "startFrame" type = "int" value = "0" />
+    <param name = "endFrame" type = "int" value = "600" />
+    <param name = "bagpath" type = "string" value = "/home/qk/Desktop/DJ_data/2019-12-21-14-31-20.bag" />
+    <param name = "LeftImage_topic" type = "string" value = "/pointgrey/left/image_color" />
+    <param name = "RightImage_topic" type = "string" value = "/pointgrey/right/image_color" />
+    <node name="node1" pkg = "LidarStereoRe" type = "stereofeature" output = "screen">
+    </node>
+</launch>
